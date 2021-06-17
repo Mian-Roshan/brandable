@@ -13,10 +13,10 @@ const dropdownArray=[
 const FilterDropdown = () => {
     return (
         <div className="w-100">
-            <div className="d-flex ps-4 flex-wrap justify-content-between">
+            <div className="d-flex ps-4 flex-wrap justify-content-uplg-between">
                 {dropdownArray.map((data,key)=>{
                     return(
-                        <Dropdown className="me-4" key={key}>
+                        <Dropdown className="me-4 mb-underlg-15" key={key}>
                             <Dropdown.Toggle variant="none" id={"filter_type"+key} className="py-0">
                                 <span className="me-2">
                                     {data.Icon}

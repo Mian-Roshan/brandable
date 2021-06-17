@@ -45,7 +45,7 @@ const Chat = () => {
                           <img src={Profile} className="rounded-circle" width="35px" height="35px" />
                         </div>
                     </div>
-                    <div class="separator mb-3 f10-size font-bolder px-3 text-grey">Client Accepted the offer</div>
+                    <div className="separator mb-3 f10-size font-bolder px-3 text-grey">Client Accepted the offer</div>
                 </div>
                 <div className="chat-footer px-3 pb-3">
                     <div className="d-flex">

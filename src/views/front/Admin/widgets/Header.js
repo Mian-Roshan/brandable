@@ -16,16 +16,22 @@ function Header() {
         <Container fluid>
           <Navbar.Brand className="mr-4">
             <Link className="text-decoration-none text-black d-flex align-items-center" to="/client/myAssets">
-              <img  src={Logo} width="40"  className="d-inline-block align-top me-3" alt="Brandable" />
-              <span class="font-boldest">Brandable</span>
+              <img src={Logo} height="40px" className="d-inline-block align-top me-3" alt="Brandable" />
             </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="brandable-nav" />
           <Navbar.Collapse id="brandable-nav">
             <Nav>
-              <NavLink activeClassName="active"  to="/admin/myProjects" className={ClassesLink}>My Projects</NavLink>
+              {/* <NavLink activeClassName="active"  to="/admin/myProjects" className={ClassesLink}>My Projects</NavLink>
               <NavLink activeClassName="active"  to="/admin/myKit" className={ClassesLink}>My Kit</NavLink>
-              <NavLink activeClassName="active"  to="/admin/myAssets" className={ClassesLink}>My Assets</NavLink>
+              <NavLink activeClassName="active"  to="/admin/myAssets" className={ClassesLink}>My Assets</NavLink> */}
+
+              <NavLink activeClassName="active"  to="/admin/myProjects" className={ClassesLink}>Home</NavLink>
+              <NavLink activeClassName="active"  to="/admin/myProjects" className={ClassesLink}>Projects</NavLink>
+              <NavLink activeClassName="active"  to="/admin/myAssets" className={ClassesLink}>Assets</NavLink>
+              <NavLink activeClassName="active"  to="/admin/templates" className={ClassesLink}>Templates</NavLink>
+              <NavLink activeClassName="active"  to="/admin/myKit" className={ClassesLink}>Brand Kit</NavLink>
+              <NavLink activeClassName="active" to="/admin/analytics" className={ClassesLink}>Analytics</NavLink>
             </Nav>
             <div className="right-nav-content ms-auto">
               <div className="right-content-btn d-flex align-items-center flex-wrap">
@@ -43,7 +49,7 @@ function Header() {
                 </div>
                 <Dropdown className="no-icon custiom-dropdown">
                   <Dropdown.Toggle  variant="none"  className="py-0">
-                    <div class="user-avatar">
+                    <div className="user-avatar">
                       <img src={Profile} className="rounded-circle" width="40px" height="40px" /> 
                     </div>
                   </Dropdown.Toggle>

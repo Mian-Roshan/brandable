@@ -18,7 +18,7 @@ const Analytics = () => {
             NextButton={false} heading={ShowMyAnalytics?"My Analytics":"Analytics"} />
             <div className="px-lg-5 px-md-4 px-3 pb-5 mt-5">
                 <Container fluid>
-                    {!ShowMyAnalytics?
+                    {/* {!ShowMyAnalytics?
                         <Row>
                             <Col xs={6} md={8} lg={6} xl={5} className="mx-auto">
                                 <ImportAnalytics NextAnalytics={NextAnalytics} />
@@ -26,7 +26,8 @@ const Analytics = () => {
                         </Row>
                     :
                     <MyAnalytics />
-                    }
+                    } */}
+                    <MyAnalytics />
                 </Container>
             </div>
         </div>

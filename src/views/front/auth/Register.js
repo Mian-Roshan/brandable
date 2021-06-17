@@ -55,7 +55,7 @@ function Register() {
                             </div>
                             <div className="gotoRegister mt-3 text-center f13-size">
                                 <p className="mb-0 font-medium">Already have an account? 
-                                   <Link to="/" className="text-primary font-medium">Log in</Link>
+                                   <Link to="/" className="text-primary font-medium"> Log in</Link>
                                 </p>
                             </div>
                         </div>

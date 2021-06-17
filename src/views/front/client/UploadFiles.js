@@ -6,6 +6,8 @@ import Col from 'react-bootstrap/Col'
 import Row from 'react-bootstrap/Row'
 import Container from 'react-bootstrap/Container'
 import AssetsFiles from './Components/AssetsFiles'
+import Searchbar from './Components/Searchbar'
+import { Scrollbars } from 'react-custom-scrollbars'
 import {
     file4,
     file1
@@ -46,46 +48,46 @@ const AssetDetail = () => {
                         <Col lg={4} md={6} xs={12} className="mt-4">
                             <div className="bg-dark text-white radius10 px-3 py-3" style={{borderBottomLeftRadius:'0',
                                 borderBottomRightRadius:'0'}}>
-                                <div class="form-element">
+                                <div className="form-element">
                                     <label className="mb-2 f12-size font-bolder w-100">Name</label>
                                     <input type="text" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
                                 </div>
-                                <div class="form-element mt-3">
+                                <div className="form-element mt-3">
                                     <label className="mb-2 f12-size font-bolder w-100">Description</label>
                                     <textarea type="text" col="12" rows="5" className="border w-100 bg-white radius4 px-3 f14-size"></textarea>
                                 </div>
-                                <div class="form-element mt-3">
+                                <div className="form-element mt-3">
                                     <label className="mb-2 f12-size font-bolder w-100">Tags</label>
                                     <input type="text" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
-                                    <div class="tags-text mt-2 d-flex flex-wrap align-items-center">
+                                    <div className="tags-text mt-2 d-flex flex-wrap align-items-center">
                                         <h5 className="mb-2 f12-size font-bolder me-2">Added Tags</h5>
                                         <ul className="list-unstyled d-flex flex-wrap">
                                             <li>
-                                                <div class={TagStyle}>
+                                                <div className={TagStyle}>
                                                     Covid
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class={TagStyle}>
+                                                <div className={TagStyle}>
                                                     Corona
                                                 </div>
                                             </li>
                                         </ul>
                                    </div>
                                 </div>
-                                <div class="form-element mt-2">
+                                <div className="form-element mt-2">
                                     <label className="mb-2 f12-size font-bolder w-100">Usage Rights</label>
                                     <Select options={options} 
                                        styles={colourStyles}
                                     />
                                 </div>
-                                <div class="form-element mt-2">
+                                <div className="form-element mt-2">
                                     <label className="mb-2 f12-size font-bolder w-100">Compaign</label>
                                     <Select options={options} 
                                        styles={colourStyles}
                                     />
                                 </div>
-                                <div class="form-element mt-2">
+                                <div className="form-element mt-2">
                                     <label className="mb-2 f12-size font-bolder w-100">Formate</label>
                                     <input type="text" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
                                 </div>
@@ -106,21 +108,40 @@ const AssetDetail = () => {
                                     <hr className="my-4" />
                                 </Col>
                             </Row>    
-                            <Row className="mx-0 other-assets">
-                                <h5 className="mb-4 f16-size font-boldest px-3 w-100">Linked Assets</h5>
-                                <Col xs={12} md={6} lg={6} xl={4} >
-                                    <AssetsFiles title="Confeti" image={file1} 
-                                    status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
-                                </Col>
-                                <Col xs={12} md={6} lg={6} xl={4} >
-                                    <AssetsFiles title="Confeti" image={file1} 
-                                    status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
-                                </Col>
-                                <Col xs={12} md={6} lg={6} xl={4} >
-                                    <AssetsFiles title="Confeti" image={file1} 
-                                    status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
-                                </Col>
-                            </Row> 
+                            <Row className="mx-0  other-assets">
+                                <h5 className="f16-size font-boldest px-3 mb-0 w-100">Linked Assets</h5>
+                                <Col xs={12}>
+                                    <div style={{marginTop:"-15px"}}> 
+                                    <Searchbar />
+                                    </div>
+                                </Col>   
+                            </Row>     
+                            <Scrollbars renderTrackHorizontal={Scrollbars.renderTrackHorizontal}
+                                renderThumbHorizontal={Scrollbars.renderThumbHorizontal}
+                                    style={{ width:"100%",height:"270px"}}>
+                                <Row className="other-assets flex-nowrap ">
+                                    <Col xs={12} md={6} lg={6} xl={4} >
+                                        <AssetsFiles title="Confeti" image={file1} 
+                                        status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
+                                    </Col>
+                                    <Col xs={12} md={6} lg={6} xl={4}>
+                                        <AssetsFiles title="Confeti" image={file1} 
+                                        status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
+                                    </Col>
+                                    <Col xs={12} md={6} lg={6} xl={4} >
+                                        <AssetsFiles title="Confeti" image={file1} 
+                                        status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
+                                    </Col>
+                                    <Col xs={12} md={6} lg={6} xl={4} >
+                                        <AssetsFiles title="Confeti" image={file1} 
+                                        status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
+                                    </Col>
+                                    <Col xs={12} md={6} lg={6} xl={4} >
+                                        <AssetsFiles title="Confeti" image={file1} 
+                                        status="avialable" extension={file1.split('.').pop()} filter="Asset by" />
+                                    </Col>
+                                </Row>
+                            </Scrollbars>
                         </Col>
                     </Row>
                 </Container>

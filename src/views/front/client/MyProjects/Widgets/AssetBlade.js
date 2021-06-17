@@ -12,9 +12,11 @@ const AssetBlade = (props) => {
         <React.Fragment>
             <Link to="#" className="text-decoration-none mx-auto w-fit-content d-block">
                 <div className={direction}>
-                    <h5 className={"w-100 text-center text-black font-bolder mb-3 f20-size "+Heading}>Project Name 1</h5>
+                    {props.headingText=="off"?
+                    null
+                    :  <h5 className={"w-100 text-center text-black font-bolder mb-3 f20-size "+Heading}>Project Name 1</h5>}
                     <div className="asset-blade text-center">
-                        <img src={assetImg} height="248px" className="img-fluid" />
+                        <img src={assetImg} height="248px" className="img-fluid radius10" />
                     </div>
                     {props.TagTime ?
                     <div className="d-flex flex-wrap w-100">

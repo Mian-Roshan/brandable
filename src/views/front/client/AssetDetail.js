@@ -37,10 +37,10 @@ const AssetDetail = () => {
                         </Col>
                         <Col lg={4} xs={12} className="mt-4">
                             <div className="bg-dark text-white radius10 px-1 py-1">
-                                <div class="box-content-body py-4 h-box-fixed px-3 px-lg-4 ">
+                                <div className="box-content-body py-4 h-box-fixed px-3 px-lg-4 ">
                                    <h5 className="mb-2 f16-size font-bolder">Name</h5>
                                    <p className="f12-size">COVID-19 Poster</p>
-                                    <div class="description-text mt-4">
+                                    <div className="description-text mt-4">
                                         <h5 className="mb-2 f16-size font-bolder">Description</h5>
                                         <p className="f12-size">
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
@@ -48,28 +48,28 @@ const AssetDetail = () => {
                                             sagittis elementum mauris nisi quam. Suspendisse volutpat.
                                         </p>
                                    </div>
-                                    <div class="tags-text mt-4">
+                                    <div className="tags-text mt-4">
                                         <h5 className="mb-2 f16-size font-bolder">Tags</h5>
                                         <ul className="list-unstyled d-flex flex-wrap">
                                             <li>
-                                                <div class={TagStyle}>
+                                                <div className={TagStyle}>
                                                     Covid
                                                 </div>
                                             </li>
                                             <li>
-                                                <div class={TagStyle}>
+                                                <div className={TagStyle}>
                                                     Corona
                                                 </div>
                                             </li>
                                         </ul>
                                    </div>
-                                    <div class="usage-text mt-4">
+                                    <div className="usage-text mt-4">
                                         <h5 className="mb-2 f16-size font-bolder">Usage Rights</h5>
                                         <p className="f12-size">
                                             Available
                                         </p>
                                     </div>
-                                    <div class="Compaign-text mt-4">
+                                    <div className="Compaign-text mt-4">
                                         <h5 className="mb-2 f16-size font-bolder">Compaign</h5>
                                         <p className="f12-size">
                                             Spring

@@ -16,7 +16,7 @@ const Footer = () => {
                         <option>English (US)</option>
                         <option>French</option>
                     </select>
-                    <img className="position-absolute" src={Globe} width="18px" alt="Globe" style={{left:"5px",top:"8px"}} />
+                    <img className="position-absolute" src={Globe} width="18px" alt="Globe" style={{left:"5px",top:"6px"}} />
                 </div>
             </li>
         </ul>

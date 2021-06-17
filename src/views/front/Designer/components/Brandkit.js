@@ -18,11 +18,11 @@ const Brandkit = () => {
                     <div className="d-flex flex-wrap align-items-center">
                         <div className={AddedLogos} style={{background:"#f5f5f5"}}>
                             <img  src={Logo} width="40"  className="d-inline-block align-top me-3" alt="Brandable" />
-                            <span class="font-bolder">Brandable</span>
+                            <span className="font-bolder">Brandable</span>
                         </div>
                         <div className={AddedLogos} style={{background:"#655252",color:'#fff'}}>
                             <img  src={Logo} width="40"  className="d-inline-block align-top me-3" alt="Brandable" />
-                            <span class="font-bolder">Brandable</span>
+                            <span className="font-bolder">Brandable</span>
                         </div>
                     </div>
                     <div className="typography-section mt-5">
@@ -41,7 +41,7 @@ const Brandkit = () => {
                             <Col xs={12} md={6} xl={4} className="mb-4 pe-4">
                                <h5 className="mb-0 font-bolder  f20-size mb-4">Brand Fonts</h5>
                                 <div className="border radius10 py-3 px-4 d-flex flex-wrap">
-                                   <div class="headingStyles pt-3">
+                                   <div className="headingStyles pt-3">
                                        <h3 className="font-bolder  mb-3 f20-size text-grey">Add a heading style</h3>
                                        <h5 className="font-bolder mb-3 f16-size text-grey">Add a heading style</h5>
                                        <h6 className="font-med mb-4 f14-size text-grey">Add a heading style</h6>

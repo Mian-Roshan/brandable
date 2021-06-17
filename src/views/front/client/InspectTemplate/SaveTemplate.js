@@ -25,7 +25,7 @@ const SaveTemplate = () => {
                                 </Col>
                                 <Col xs={12} md={6} lg={7} className="mt-3 ms-auto">
                                     <div className="upload-assets">
-                                        <button class="theme-light-btn text-white outline-none border-0 
+                                        <button className="theme-light-btn text-white outline-none border-0 
                                             mx-auto d-flex justify-content-center align-items-center h-40px text-decoration-none">
                                             Save and Upload
                                         </button>

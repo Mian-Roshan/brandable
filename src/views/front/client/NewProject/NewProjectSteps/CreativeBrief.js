@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import Header from '../../widgets/Header'
 import Backbar from '../../widgets/BackBar'
 import Container from 'react-bootstrap/Container'
@@ -7,6 +7,13 @@ import Col from 'react-bootstrap/Col'
 import {Link} from 'react-router-dom';
 import Select from 'react-select'
 const CreativeBreaf = () => {
+    const locationPara = localStorage.getItem('namePara')
+    const [setPara, setpara] = useState('')
+    useEffect(() => {
+        return () => {
+            setpara(locationPara)
+        }
+    }, [])
     const ButtonStyleForm = "btn-theme-outline-primary f14-size btn-circle px-4 py-2  btn-outline"
     const options = [
         { value: 'ValueFirst', label: 'ValueFirst' },
@@ -35,7 +42,7 @@ const CreativeBreaf = () => {
         <div className="main-wrap">
             <Header />
             <Backbar BackButton={true} 
-            NextButton={true} NextUrl={'/client/newProject/optimization'} heading="Your Design" />
+            NextButton={false}  heading="Your Project" />
             <div className="px-lg-5 px-md-4 px-3 pb-5">
                 <Container fluid> 
                    <Row className="mt-5 px-xl-4">
@@ -57,11 +64,30 @@ const CreativeBreaf = () => {
                                         />
                                     </div>
                                </Col>
-                               <div className="field-style-wrap mt-4">
+                                <div className="field-style-wrap mt-4">
                                     <lable className="f12-size font-bold text-brand-grey">Description</lable>
                                     <textarea type="text" className="form-control py-3 mt-2 f14-size resize-none" cols="12" rows="6"
                                     placeholder="Enter your project description"></textarea>
                                 </div>
+                                <div className="field-style-wrap mt-4">
+                                    <lable className="f12-size font-bold text-brand-grey">Target Audiance</lable>
+                                    <input type="text" className="form-control mt-2 f14-size"
+                                    placeholder="Target Audiance" />
+                                </div>
+                                {}
+                                <div className="field-style-wrap mt-4">
+                                    <lable className="f12-size font-bold text-brand-grey">Optimization Metric</lable>
+                                    <Select className="mt-2" options={options}
+                                        styles={colourStyles}
+                                    />
+                                </div>
+                                {locationPara=="designer"?
+                                <div className="field-style-wrap mt-4">
+                                    <lable className="f12-size font-bold text-brand-grey">Instrucitons for designer</lable>
+                                    <textarea type="text" className="form-control py-3 mt-2 f14-size resize-none" cols="12" rows="6"
+                                    placeholder="Instrucitons for designer"></textarea>
+                                </div>
+                                :null}
                             </Row>
                             <div className="d-flex justify-content-end">
                                 <div className="mt-4 me-3">

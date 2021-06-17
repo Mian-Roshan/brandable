@@ -9,14 +9,15 @@ function BackBar(props) {
     const topHeadClass = props.NextButton?"ms-auto":"mx-auto",
     ButtonStyle = "border-0 bg-transparent d-flex align-items-center text-white font-bolder"
     return (
-        <div className="Back-top-bar py-3 px-lg-5 px-md-4 px-3 gr-gredient d-flex align-items-center">
+        <div className={`Back-top-bar py-3 px-lg-5 px-md-4 px-3 ${props.bgColor? null : "gr-gredient"} 
+        d-flex align-items-center`} style={{backgroundColor:props.bgColor? props.bgColor : "null"}}>
             {props.BackButton?
                 <button className="border-0 bg-transparent d-flex align-items-center 
                   text-white font-bolder" onClick={goBack}>
                   <ArrowLeft className="me-2" style={{fontSize:"22px"}} /> Back
                 </button>
             :null}
-            <div class="d-flex align-items-center mx-auto flex-1">
+            <div className="d-flex align-items-center mx-auto flex-1">
                 <p className={'text-white mb-0 text-center font-semi '+topHeadClass}>
                     {props.heading}
                 </p>

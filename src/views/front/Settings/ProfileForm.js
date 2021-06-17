@@ -40,7 +40,7 @@ const ProfileForm = () => {
                 </div>
             </Col>
             <Col xs={12} md={10} lg={8}>
-                <h5 className="f16-size text-black font-bolder mt-4 pb-3 border-bottom">Security</h5>
+                <h5 className="f16-size text-black font-bolder mt-4 pb-3 border-bottom">Subscription</h5>
                 <div className="pr-data-fields mt-3">
                     <label className="f12-size text-grey font-bold">Password</label>
                     <div className="position-relative">

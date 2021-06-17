@@ -1,4 +1,5 @@
 import Logo from '../../../assets/images/png/logo.png';
+import Logo_old from '../../../assets/images/png/logo_old.png';
 import BannerAuth from '../../../assets/images/png/assets_collection.png';
 import Globe from '../../../assets/images/svg/globe.svg';
 import Privacy from '../../../assets/images/svg/privacy.svg';
@@ -28,6 +29,16 @@ import angleDown from '../../../assets/images/png/angle-down.png';
 import Presentation from '../../../assets/images/png/Presentation.png';
 import Covid19 from '../../../assets/images/png/covid19.png';
 import village from '../../../assets/images/png/village.png';
+import freePlan from '../../../assets/images/webp/freePlan.webp';
+import proPlan from '../../../assets/images/webp/proPlan.webp';
+import enterprisePlan from '../../../assets/images/webp/EnterprisePlan.webp';
+import crown from '../../../assets/images/svg/crown.svg';
+import Baxter from '../../../assets/images/webp/baxter.webp';
+import KingWood from '../../../assets/images/webp/kingWood.webp';
+import Hubspot from '../../../assets/images/svg/hubspot.svg';
+import warnermusic from '../../../assets/images/svg/warnermusic.svg';
+import Total from '../../../assets/images/webp/total.webp';
+import idc from '../../../assets/images/webp/idc.webp';
 export {
   Logo,
   BannerAuth,
@@ -58,5 +69,16 @@ export {
   angleDown,
   Presentation,
   Covid19,
-  village
+  village,
+  Logo_old,
+  freePlan,
+  proPlan,
+  enterprisePlan,
+  crown,
+  Baxter,
+  KingWood,
+  Hubspot,
+  warnermusic,
+  Total,
+  idc
 }

@@ -61,7 +61,7 @@ const FilterSearch = () => {
                         )
                     })}
                 </ul>
-                <div class="search-field position-relative d-flex flex-1 me-3 mb-5">
+                <div className="search-field position-relative d-flex flex-1 me-3 mb-5">
                     <input type="text" className="flex-1 searchbar-custom bg-transparent" placeholder="Search Assets" style={{
                         boxShadow:"none",
                     }} />

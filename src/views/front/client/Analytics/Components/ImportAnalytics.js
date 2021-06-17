@@ -37,7 +37,7 @@ const ImportAnalytics = ({NextAnalytics}) => {
         </div>
         <div className="field-group mt-4">
             <label className="mb-2 font-bold f14-size">Import</label>
-            <div class="form-element">
+            <div className="form-element">
                 <Select options={options} 
                 styles={colourStyles}
                 />

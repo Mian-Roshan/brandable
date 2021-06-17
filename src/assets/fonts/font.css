@@ -1,44 +1,40 @@
 /* font start */
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Regular.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-Regular.otf');
     font-weight: 500;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Medium.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-Medium.otf');
     font-weight: 600;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Bold.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-Bold.otf');
     font-weight: bold;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-SemiBold.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-SemiBold.otf');
     font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-Light.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-Light.otf');
     font-weight: lighter;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('Montserrat-ExtraBold.ttf');
+    font-family: 'Metropolis';
+    src: url('Metropolis-ExtraBold.otf');
     font-weight: 900;
 }
 
-@font-face {
-    font-family: 'poppins';
-    src: url('Poppins.ttf.woff');
-}
 
 /* font end */

@@ -26,11 +26,11 @@ const SaveForm = () => {
     return (
         <>
             <div className="bg-brand-blue text-white radius10 px-3 py-3 radius16">
-                <div class="form-element">
+                <div className="form-element">
                     <label className="mb-2 f12-size font-bolder w-100">Name</label>
                     <input type="text" value="COVID-19 Poster" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
                 </div>
-                <div class="form-element mt-3">
+                <div className="form-element mt-3">
                     <label className="mb-2 f12-size font-bolder w-100">Description</label>
                     <textarea type="text" col="12" rows="4" 
                         className="border w-100 bg-white radius4 p-3 f14-size"
@@ -38,42 +38,42 @@ const SaveForm = () => {
                         Cras arcu, vel quisque qutam ut sem enim sit. ">
                     </textarea>
                 </div>
-                <div class="form-element mt-3">
+                <div className="form-element mt-3">
                     <label className="mb-2 f12-size font-bolder w-100">Tags</label>
                     <input type="text" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
-                    <div class="tags-text mt-2 d-flex flex-wrap align-items-center">
+                    <div className="tags-text mt-2 d-flex flex-wrap align-items-center">
                         <h5 className="mb-2 f12-size font-bolder me-2">Added Image</h5>
                         <ul className="list-unstyled d-flex flex-wrap">
                             <li>
-                                <div class={TagStyle}>
+                                <div className={TagStyle}>
                                 Covid
                             </div>
                             </li>
                             <li>
-                                <div class={TagStyle}>
+                                <div className={TagStyle}>
                                 Corona
                             </div>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="form-element mt-2">
+                <div className="form-element mt-2">
                     <label className="mb-2 f12-size font-bolder w-100">Creative Type</label>
                     <Select options={options}
                         styles={colourStyles}
                     />
                 </div>
-                <div class="form-element mt-2">
+                <div className="form-element mt-2">
                     <label className="mb-2 f12-size font-bolder w-100">Compaign</label>
                     <Select options={options}
                         styles={colourStyles}
                     />
                 </div>
-                <div class="form-element mt-2">
+                <div className="form-element mt-2">
                     <label className="mb-2 f12-size font-bolder w-100">Formate</label>
                     <input type="text" className="border w-100 bg-white radius4 px-3 f14-size h-38px" />
                 </div>
-                <div class="form-element mt-2">
+                <div className="form-element mt-2">
                     <label className="mb-2 f12-size font-bolder w-100">Department</label>
                     <labe className="f12-size d-block mt-2">
                       <input type="radio" className="me-2" />

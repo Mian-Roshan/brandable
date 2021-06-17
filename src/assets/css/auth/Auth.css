@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url('../../fonts/font.css');
 *, body, html {
-  font-family: 'Montserrat';
+  font-family: 'Metropolis';
   scroll-behavior: smooth;
   font-weight: 500;
 }
@@ -26,7 +26,7 @@ input, button, textarea, select {
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 0, 0, 0.5);
+  background: rgb(0, 0, 0, 0.65);
 }
 
 .transparent-bg-black {
@@ -94,7 +94,7 @@ input, button, textarea, select {
     background-position: -100vw 0;
   }
 }
-
+/* 
 .bg-slide-anim {
   animation: animatedBackground 20s linear infinite;
   -moz-animation: animatedBackground 20s linear infinite;
@@ -103,7 +103,7 @@ input, button, textarea, select {
   -o-animation: animatedBackground 20s linear infinite;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
-}
+} */
 
 .form-header {
   font-weight: 700;

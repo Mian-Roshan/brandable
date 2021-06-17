@@ -62,7 +62,7 @@ const MyProject = () => {
         <div className="main-wrap">
             <Header />
             <Backbar BackButton={true} 
-            NextButton={true} NextUrl={'/client/newProject/CreativeBrief'} heading="New Project" />
+            NextButton={true} NextUrl={'/client/newProject/CreativeBrief'} heading="What do you want to create?" />
             <div className="px-lg-5 px-md-4 px-3 pb-5">
                 <Container fluid> 
                    <div className="mt-5">
@@ -96,7 +96,7 @@ const MyProject = () => {
                                         {listItemsInner.map((listItemsI, index) => { 
                                             return (
                                                 <Col md={6} lg={4} className="col-xl-2-5 mb-5" key={index} >
-                                                    <Link to="#" className="text-decoration-none">
+                                                    <Link to="/client/newProject/CreativeBrief" className="text-decoration-none">
                                                         <div className="bg-grey text-center 
                                                             justify-content-center d-flex 
                                                             align-items-center" style={{borderRadius:"10px"}}>

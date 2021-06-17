@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import AssetsFiles from '../../Components/AssetsFiles'
 import DropzoneComponent from '../Components/Dropzone'
+import { Scrollbars } from 'react-custom-scrollbars'
 import {
     file1,
     file2,
@@ -13,6 +14,8 @@ import {
 } from "../../../components/AllImages"
 const FileArray = [
     { title: "Confetti", extension: file1, status: "available", filter: "Produced By" },
+    { title: "Tie and Dye", extension: file2, status: "available", filter: "Asset Type" },
+    { title: "Glitters-pkssa.png", extension: file3, status: "available", filter: "Advance" },
     { title: "Tie and Dye", extension: file2, status: "available", filter: "Asset Type" },
     { title: "Glitters-pkssa.png", extension: file3, status: "available", filter: "Advance" }
 ]
@@ -24,7 +27,7 @@ const UploadAssets = () => {
         <div className="main-wrap">
             <Header />
             <Backbar BackButton={true}
-            NextButton={true} NextUrl={'/client/newProject/UploadAssets'} 
+            NextButton={true} NextUrl={'/client/uploadFiles'} 
             heading="Upload Assets" />
             <div className="px-lg-5 px-md-4 px-3 pb-5">
                 <Container fluid>
@@ -50,21 +53,27 @@ const UploadAssets = () => {
                                     <Col xs={12}>
                                         <h5 className="f14-size font-bold text-brand-grey">Uploaded Assets({FileArray.length})</h5>
                                     </Col>
-                                    <Row className="asset-c-row">
-                                        {FileArray.map((data, key) => {
-                                            return (
-                                                <Col md={6} lg={6} xl={4} xs={12} className="mt-4">
-                                                    <AssetsFiles 
-                                                    key={key} title={data.title} image={data.extension}
-                                                    status={data.status} 
-                                                    extension={data.extension.split('.').pop()} 
-                                                    filter={data.filter}
-                                                    url={`/client/myProjects/${data.title}`}
-                                                    />
-                                                </Col>
-                                            )
-                                        })}
-                                    </Row>
+                                    <Scrollbars
+                                        renderTrackHorizontal={Scrollbars.renderTrackHorizontal}
+                                        renderTrackVertical={Scrollbars.renderTrackVertical}
+                                        renderThumbHorizontal={Scrollbars.renderThumbHorizontal}
+                                         style={{ width:"100%"}}>
+                                        <Row className="asset-c-row flex-nowrap react-custom-scroll">
+                                            {FileArray.map((data, key) => {
+                                                return (
+                                                    <Col md={6} lg={6} xl={4} xs={12} className="mt-4">
+                                                        <AssetsFiles 
+                                                        key={key} title={data.title} image={data.extension}
+                                                        status={data.status} 
+                                                        extension={data.extension.split('.').pop()} 
+                                                        filter={data.filter}
+                                                        url={`/client/myProjects/${data.title}`}
+                                                        />
+                                                    </Col>
+                                                )
+                                            })}
+                                        </Row>
+                                    </Scrollbars>
                                 </Col>
                             </div>
                         </div>

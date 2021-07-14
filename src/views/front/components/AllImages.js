@@ -39,6 +39,19 @@ import Hubspot from '../../../assets/images/svg/hubspot.svg';
 import warnermusic from '../../../assets/images/svg/warnermusic.svg';
 import Total from '../../../assets/images/webp/total.webp';
 import idc from '../../../assets/images/webp/idc.webp';
+import templates from '../../../assets/images/svg/editor/templates.svg';
+import text from '../../../assets/images/svg/editor/text.svg';
+import fonts from '../../../assets/images/svg/editor/fonts.svg';
+import icons from '../../../assets/images/svg/editor/icons.svg';
+import elements from '../../../assets/images/svg/editor/elements.svg';
+import images from '../../../assets/images/svg/editor/images.svg';
+import colors from '../../../assets/images/svg/editor/colors.svg';
+import pages from '../../../assets/images/svg/editor/pages.svg';
+import fullScreen from '../../../assets/images/svg/editor/fullScreen.svg';
+import facebook from '../../../assets/images/svg/editor/facebook.svg';
+import instagram from '../../../assets/images/svg/editor/instagram.svg';
+import drive from '../../../assets/images/svg/editor/drive.svg';
+import dropbox from '../../../assets/images/svg/editor/dropbox.svg';
 export {
   Logo,
   BannerAuth,
@@ -80,5 +93,18 @@ export {
   Hubspot,
   warnermusic,
   Total,
-  idc
+  idc,
+  templates,
+  text,
+  fonts,
+  icons,
+  images,
+  colors,
+  elements,
+  pages,
+  fullScreen,
+  facebook,
+  instagram,
+  dropbox,
+  drive
 }

@@ -53,8 +53,8 @@ const routes = [
   { path: '/client/notifications', component:Notifications, exact:true},
   { path: '/client/settings', component:Settings, exact:true},
   { path: '/client/analytics', component:Analytics, exact:true},
-  {path:  '/client/SaveTemplate', component:SaveTemplate, exact:true },
-  {path:  '/client/plans', component:Plans, exact:true },
+  { path:  '/client/SaveTemplate', component:SaveTemplate, exact:true },
+  { path:  '/client/plans', component:Plans, exact:true },
   { path: '/admin/myProjects', component:AdminAssets, exact:true},
   { path: '/admin/assignTask', component:AssignTask, exact:true},
   { path: '/admin/projectDetail/:Project_name', component:AdminProjectDetail, exact:true},
@@ -63,7 +63,7 @@ const routes = [
   { path: '/designer/projectDetail/:Project_name', component:DesignerProjectDetail, exact:true},
   { path: '/designer/notifications/', component:DesignerNotifications, exact:true},
   { path: '/designer/settings/', component:DesignerSettings, exact:true},
-  {path:'*', exact:true, component:NotFoundPage}
+  { path:'*', exact:true, component:NotFoundPage}
 ];
 
 export default routes;
